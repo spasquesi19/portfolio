@@ -84,7 +84,9 @@
     .portrait {
       width: 250px;
       height: 250px;
-      /*background: url(../img/portrait.jpg);*/
+      background: url(../img/portrait.jpg);
+      background-size: cover;
+      background-position: center;
       border: solid 3px $color-secondary;
     }
   }
@@ -95,5 +97,31 @@
     &.show {
       transform: translate(0, 0);
     }
+
+    &.current > a {
+      color: $text-secondary;
+    }
+  }
+
+  .nav-link {
+    display: inline-block;
+    position: relative;
+    font-size: 30px;
+    text-transform: uppercase;
+    padding: 1rem 0;
+    font-weight: 300;
+    color: $text-primary;
+    text-decoration: none;
+    @include easeOut(color);
+
+    &:hover {
+      color: $text-secondary;
+    }
+  }
+}
+
+@for $x from 1 through 4 {
+  .nav-item:nth-child(#{$x}) {
+    transition-delay: $x * 0.1s + 0.1s;
   }
 }
