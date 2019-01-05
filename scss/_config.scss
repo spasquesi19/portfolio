@@ -1,0 +1,9 @@
+$color-primary: #3f3f47;
+$color-secondary: #ff8000;
+$text-primary: #ffffff;
+$text-secondary: $color-secondary;
+$menu-bar-color: #ffffff;
+
+@mixin easeOut($prop) {
+  transition: $prop 0.5s ease-out;
+}
