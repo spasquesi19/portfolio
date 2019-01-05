@@ -1,6 +1,79 @@
-$primary-color: #444;
+$color-primary: #3f3f47;
+$color-secondary: #ff8000;
+$text-primary: #ffffff;
+$text-secondary: $color-secondary;
+
+$home-img: url();
+$show-home-img: true;
+
+@mixin easeOut($prop) {
+  transition: $prop 0.5s ease-out;
+}
+
+* {
+  box-sizing: border-box;
+}
 
 body {
-  background: $primary-color;
-  color: #fff;
+  background: $color-primary;
+  color: $text-primary;
+  height: 100%;
+  margin: 0;
+  font-family: "Roboto", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.5;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+  font-weight: 500;
+
+  &.big-heading {
+    font-size: 6rem;
+  }
+  &.small-heading {
+    margin-bottom: 2rem;
+    padding: 0.2rem, 1rem;
+  }
+}
+
+a {
+  color: $text-primary;
+  text-decoration: none;
+}
+
+header {
+  position: fixed;
+  z-index: 2;
+  width: 100%;
+}
+
+.text-secondary {
+  color: $text-secondary;
+}
+
+main {
+  padding: 4rem;
+  height: 100%;
+
+  .icon {
+    margin-top: 1rem;
+
+    a {
+      padding: 0.4rem;
+
+      &:hover {
+        color: $color-secondary;
+        @include easeOut(color);
+      }
+    }
+  }
+
+  &#home {
+    overflow: hidden;
+    h1 {
+      margin-top: 20vh;
+    }
+  }
 }
