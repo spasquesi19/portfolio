@@ -99,7 +99,7 @@
     }
 
     &.current > a {
-      color: $text-secondary;
+      color: $text-color-secondary;
     }
   }
 
@@ -110,12 +110,12 @@
     text-transform: uppercase;
     padding: 1rem 0;
     font-weight: 300;
-    color: $text-primary;
+    color: $text-color-primary;
     text-decoration: none;
     @include easeOut(color);
 
     &:hover {
-      color: $text-secondary;
+      color: $text-color-secondary;
     }
   }
 }

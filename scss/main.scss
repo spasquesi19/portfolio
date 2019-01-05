@@ -1,6 +1,5 @@
 @import "config";
 @import "menu";
-@import "mobile";
 
 * {
   box-sizing: border-box;
@@ -8,7 +7,7 @@
 
 body {
   background: $color-primary;
-  color: $text-primary;
+  color: $text-color-primary;
   height: 100%;
   margin: 0;
   font-family: "Roboto", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -31,7 +30,7 @@ h3 {
 }
 
 a {
-  color: $text-primary;
+  color: $text-color-primary;
   text-decoration: none;
 }
 
@@ -42,7 +41,7 @@ header {
 }
 
 .text-secondary {
-  color: $text-secondary;
+  color: $text-color-secondary;
 }
 
 main {
@@ -69,3 +68,25 @@ main {
     }
   }
 }
+
+.about-info {
+  display: grid;
+  grid-gap: 30px;
+  grid-template-areas: "bioimage bio bio";
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.bio-image {
+  grid-area: bioimage;
+  margin: auto;
+  border: $color-secondary 3px solid;
+  width: 250px;
+  height: 250px;
+}
+
+.bio {
+  grid-area: bio;
+  font-size: 1.5rem;
+}
+
+@import "mobile";

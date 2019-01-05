@@ -1,11 +1,19 @@
 $color-primary: #3f3f47;
 $color-secondary: #ff8000;
-$text-primary: #ffffff;
-$text-secondary: $color-secondary;
-$menu-bar-color: #ffffff;
+$text-color-primary: set-contrast-color($color-primary);
+$text-color-secondary: $color-secondary;
+$menu-bar-color: set-contrast-color($color-primary);
 
 @mixin easeOut($prop) {
   transition: $prop 0.5s ease-out;
+}
+
+@function set-contrast-color($color) {
+  @if (lightness($color) > 40) {
+    @return #000000;
+  } @else {
+    @return #ffffff;
+  }
 }
 
 @mixin mediaSm {
