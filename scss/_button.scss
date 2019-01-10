@@ -1,0 +1,22 @@
+@import "config";
+
+.btn-cont {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1rem;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.5rem 0.5rem;
+  text-align: center;
+  border-radius: 20px;
+  border: 1px $color-contrast solid;
+  color: $color-contrast;
+
+  &:hover {
+    background: $color-secondary;
+    border-color: $color-secondary;
+    @include easeOut(all);
+  }
+}

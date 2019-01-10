@@ -1,5 +1,6 @@
 $color-primary: #3f3f47;
 $color-secondary: #ff8000;
+$color-contrast: set-contrast-color($color-primary);
 $text-color-primary: set-contrast-color($color-primary);
 $text-color-secondary: $color-secondary;
 $menu-bar-color: set-contrast-color($color-primary);
@@ -17,12 +18,12 @@ $menu-bar-color: set-contrast-color($color-primary);
 }
 
 @mixin mediaSm {
-  @media screen and (max-width: 500px) {
+  @media screen and (max-width: 550px) {
     @content;
   }
 }
 @mixin mediaMd {
-  @media screen and (min-width: 501px) and (max-width: 768px) {
+  @media screen and (min-width: 551px) and (max-width: 768px) {
     @content;
   }
 }

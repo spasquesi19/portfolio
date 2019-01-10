@@ -1,5 +1,6 @@
 @import "config";
 @import "menu";
+@import "button";
 
 * {
   box-sizing: border-box;
@@ -87,6 +88,23 @@ main {
 .bio {
   grid-area: bio;
   font-size: 1.5rem;
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2vw;
+
+  img {
+    width: 100%;
+    border: 3px $color-contrast solid;
+
+    &:hover {
+      opacity: 0.5;
+      border-color: $color-secondary;
+      @include easeOut(all);
+    }
+  }
 }
 
 @import "mobile";
