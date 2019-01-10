@@ -48,7 +48,6 @@
   position: fixed;
   top: 0;
   width: 100%;
-  opacity: 0.9;
   visibility: hidden;
 
   &.show {
@@ -68,6 +67,7 @@
   }
 
   &-nav {
+    opacity: 0.9;
     margin: 0;
     padding: 0;
     background: darken($color-primary, 5);
@@ -81,7 +81,14 @@
   }
 
   &-hello {
-    background: $color-primary;
+    .transparent {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      opacity: 0.9;
+      background: $color-primary;
+    }
+
     transform: translate(0, 100%);
     @include easeOut(all);
 
@@ -96,6 +103,7 @@
       background-size: cover;
       background-position: center;
       border: solid 3px $color-secondary;
+      z-index: 1;
     }
   }
 
