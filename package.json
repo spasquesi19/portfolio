@@ -3,12 +3,8 @@
   "version": "1.0.0",
   "description": "Responsive Portfolio Website",
   "main": "index.js",
-  "scripts": {
-    "sass": "node-sass -w scss/ -o dist/css/ --recursive"
-  },
+  "scripts": {},
   "author": "Sam Pasquesi",
   "license": "MIT",
-  "dependencies": {
-    "node-sass": "^4.11.0"
-  }
+  "dependencies": {}
 }

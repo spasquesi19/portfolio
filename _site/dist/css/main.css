@@ -224,6 +224,7 @@ main {
     line-height: 1;
     margin-bottom: 1rem;
     font-size: 4.7rem; }
+
   ul.menu-nav,
   div.menu-hello {
     float: none;
@@ -232,27 +233,31 @@ main {
     ul.menu-nav.show,
     div.menu-hello.show {
       transform: translate(0, 0); }
+
   .menu-nav {
     height: 75vh;
     transform: translate(-100%, 0);
     font-size: 24px; }
+
   .menu-hello {
     height: 25vh;
     transform: translate(100%, 0); }
     .menu-hello .portrait {
       width: 150px;
       height: 150px; }
+
   .about-info {
-    grid-template-areas: "bioimage" "bio";
+    grid-template-areas: "bioimage" "bio";
     grid-template-columns: 1fr; }
+
   .projects {
     grid-template-columns: 1fr; } }
-
 @media screen and (min-width: 551px) and (max-width: 768px) {
   main .big-heading {
     line-height: 1;
     margin-bottom: 1rem;
     font-size: 4.7rem; }
+
   ul.menu-nav,
   div.menu-hello {
     float: none;
@@ -261,26 +266,28 @@ main {
     ul.menu-nav.show,
     div.menu-hello.show {
       transform: translate(0, 0); }
+
   .menu-nav {
     height: 75vh;
     transform: translate(-100%, 0);
     font-size: 24px; }
+
   .menu-hello {
     height: 25vh;
     transform: translate(100%, 0); }
     .menu-hello .portrait {
       width: 150px;
       height: 150px; }
+
   .about-info {
-    grid-template-areas: "bioimage" "bio";
+    grid-template-areas: "bioimage" "bio";
     grid-template-columns: 1fr; }
+
   .projects {
     grid-template-columns: repeat(2, 1fr); } }
-
 @media screen and (min-width: 769px) and (max-width: 1170px) {
   .projects {
     grid-template-columns: repeat(3, 1fr); } }
-
 @media screen and (min-width: 1171px) {
   .projects {
     grid-template-columns: repeat(4, 1fr); } }
