@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.6.3/js/all.js"
+      integrity="sha384-EIHISlAOj4zgYieurP0SdoiBYfGJKkgWedPHH4jCzpCXLmzVsw1ouK59MuUtP4a1"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="css/main.css" />
+    <title>{{ page.title }}</title>
+  </head>
+  <body>
+    <header>
+      <div class="menu-btn">
+        <div class="btn-line"></div>
+        <div class="btn-line"></div>
+        <div class="btn-line"></div>
+      </div>
+
+      <nav class="menu">
+        <div class="menu-hello">
+          <div class="transparent"></div>
+          <div class="portrait"></div>
+        </div>
+
+        <ul class="menu-nav">
+          {% for item in site.data.pagelist %}
+          <li
+            class="nav-item {% if item.title == page.title %}current{% endif %}"
+          >
+            <a href="{{ item.url }}" class="nav-link"> {{ item.title }} </a>
+          </li>
+          {% endfor %}
+        </ul>
+      </nav>
+    </header>
+
+    <main id="{{ page.title }}">{{ content }}</main>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
