@@ -192,6 +192,8 @@ main {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 2vw; }
+  .projects .item {
+    text-align: center; }
   .projects img {
     width: 100%;
     border: 3px #ffffff solid; }

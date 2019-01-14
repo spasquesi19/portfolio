@@ -99,6 +99,10 @@ main {
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 2vw;
 
+  .item {
+    text-align: center;
+  }
+
   img {
     width: 100%;
     border: 3px $color-contrast solid;

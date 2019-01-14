@@ -1,2 +1,12 @@
 sass:
   sass_dir: _sass
+
+collections:
+  projects:
+    output: true
+
+defaults:
+  - scope:
+      path: "dist/img"
+    values:
+      image: true
