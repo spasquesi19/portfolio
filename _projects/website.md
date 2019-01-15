@@ -1,6 +1,6 @@
 ---
 title: Portfolio Website
-img_path: ../dist/img/portrait.JPG
+img_path: ../dist/img/website_thumb.PNG
 gh_path: :)
 ---
 

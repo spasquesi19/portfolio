@@ -7,11 +7,11 @@ title: projects
 <div class="projects">
   {% for project in site.projects %}
   <div class="item">
-    <a href="{{ project.url }}">
+    <a href="{{ project.demo_path }}">
       <img src="{{ project.img_path }}" alt="Project" />
     </a>
     <div class="btn-cont">
-      <a href="{{ project.url }}" class="btn">
+      <a href="{{ project.demo_path }}" class="btn">
         <i class="fas fa-eye"></i> Project
       </a>
       <a href="{{ project.gh_path }}" class="btn">
