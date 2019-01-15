@@ -1,0 +1,3 @@
+[submodule "StockBuzz"]
+	path = ./dist/project_pages/StockBuzz
+	url = https://github.com/spasquesi19/StockBuzz.git
