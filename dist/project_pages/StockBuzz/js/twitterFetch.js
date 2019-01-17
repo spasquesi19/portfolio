@@ -1,13 +1,14 @@
-function twitterFetch(){
-  const url = 'http://stockbuzz-env.p7p8dnmtvv.us-east-2.elasticbeanstalk.com/twitter'
+function twitterFetch() {
+  const url =
+    "http://stockbuzzbackend-env.nugyicp3zu.us-east-2.elasticbeanstalk.com/";
 
-  var t = document.getElementById('ticker').value;
+  var t = document.getElementById("ticker").value;
   var name = new Stock().requestStockQuote(t).name;
-  var params = "name="+name
+  var params = "name=" + name;
 
   var request = new XMLHttpRequest();
 
-  request.open("GET", url+"?"+params, false);
+  request.open("GET", url + "?" + params, false);
   request.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
   request.send(null);
 
@@ -25,5 +26,4 @@ function twitterFetch(){
   var data = JSON.parse(responseData);
 
   return data;
-
 }

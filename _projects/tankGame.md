@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Tank Game
-demo_path: ../dist/test.html
+demo_path: ../dist/project_pages/tank_game/test.html
 img_path: ../dist/img/tankgame_thumb.PNG
 gh_path: https://github.com/spasquesi19/Tank-Game
 ---
