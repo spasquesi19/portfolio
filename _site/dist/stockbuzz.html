@@ -16,7 +16,7 @@
       rel="stylesheet"
       type="text/css"
     />
-    <title>{{ page.title }}</title>
+    <title>stockbuzz</title>
   </head>
   <body>
     <header>
@@ -33,18 +33,37 @@
         </div>
 
         <ul class="menu-nav">
-          {% for item in site.data.pagelist %}
+          
           <li
-            class="nav-item {% if item.title == page.title %}current{% endif %}"
+            class="nav-item "
           >
-            <a href="{{ item.url }}" class="nav-link"> {{ item.title }} </a>
+            <a href="index.html" class="nav-link"> home </a>
           </li>
-          {% endfor %}
+          
+          <li
+            class="nav-item "
+          >
+            <a href="about.html" class="nav-link"> about </a>
+          </li>
+          
+          <li
+            class="nav-item "
+          >
+            <a href="projects.html" class="nav-link"> projects </a>
+          </li>
+          
+          <li
+            class="nav-item "
+          >
+            <a href="contact.html" class="nav-link"> contact </a>
+          </li>
+          
         </ul>
       </nav>
     </header>
 
-    <main id="{{ page.title }}">{{ content }}</main>
+    <main id="stockbuzz"><h1 class="big-heading">Stock<span class="text-secondary">Buzz</span></h1>
+</main>
 
     <script src="js/main.js"></script>
   </body>
