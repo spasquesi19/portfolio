@@ -1,9 +1,7 @@
 ---
 title: Stock Buzz
 img_path: ../dist/img/stockbuzz_thumb.PNG
-info_path: ../dist/stockbuzz.html
-demo_path: ../dist/project_pages/StockBuzz/index.html
 gh_path: https://github.com/spasquesi19/stockbuzz-backend
 ---
 
-Tank game description blaglkjsd klsdjlk dskl lkdsjfkl djsfkljdlks jflkjsdlkfjlk sjdlkf lksdjflk jlksf jl
+StockBuzz: My first hackathon project. It is a web app that lets investors compare how well a company's stock is doing side by side with the public opinion of that company in the form of trending tweets. Enter an valid company ticker to see a chart of the stock value over the last month and trending tweets.

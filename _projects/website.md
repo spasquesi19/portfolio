@@ -1,6 +1,7 @@
 ---
 title: Portfolio Website
 img_path: ../dist/img/website_thumb.PNG
+demo_path: https://northerntorch.com
 ---
 
-Tank game description blaglkjsd klsdjlk dskl lkdsjfkl djsfkljdlks jflkjsdlkfjlk sjdlkf lksdjflk jlksf jl
+Northern Torch: This is a website I created from the ground up as a freelance developer. The website was created using React with the Ant Design UI framework. Unfortunately I do not have permission from the client to release the source code. You can poke around on the website, but most of the content is not accessible without a password.

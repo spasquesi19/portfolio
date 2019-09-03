@@ -8,15 +8,17 @@ title: projects
   <div class="items">
     {% for project in site.projects %}
     <div class="item">
-      <a href="{{ project.info_path }}">
+      <div class="project-img-overlay">
         <img src="{{ project.img_path }}" alt="Project" />
-      </a>
+        {{ project.content }}
+      </div>
       <div class="btn-cont">
-        <a href="{{ project.info_path }}" class="btn">
+        {% if project.demo_path %}
+        <a href="{{ project.demo_path }}" target="_blank" class="btn">
           <i class="fas fa-eye"></i> Project
         </a>
-        {% if project.gh_path %}
-        <a href="{{ project.gh_path }}" class="btn">
+        {% endif %} {% if project.gh_path %}
+        <a href="{{ project.gh_path }}" target="_blank" class="btn">
           <i class="fab fa-github"></i> GitHub
         </a>
         {% endif %}
