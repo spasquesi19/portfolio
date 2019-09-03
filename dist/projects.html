@@ -9,16 +9,24 @@ title: projects
     {% for project in site.projects %}
     <div class="item">
       <div class="project-img-overlay">
-        <img src="{{ project.img_path }}" alt="Project" />
+        <img src="{{ project.img_path | relative_url }}" alt="Project" />
         {{ project.content }}
       </div>
       <div class="btn-cont">
         {% if project.demo_path %}
-        <a href="{{ project.demo_path }}" target="_blank" class="btn">
+        <a
+          href="{{ project.demo_path | relative_url }}"
+          target="_blank"
+          class="btn"
+        >
           <i class="fas fa-eye"></i> Project
         </a>
         {% endif %} {% if project.gh_path %}
-        <a href="{{ project.gh_path }}" target="_blank" class="btn">
+        <a
+          href="{{ project.gh_path | relative_url }}"
+          target="_blank"
+          class="btn"
+        >
           <i class="fab fa-github"></i> GitHub
         </a>
         {% endif %}
